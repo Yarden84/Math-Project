@@ -1,0 +1,64 @@
+/*------------------------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: hadasimclm;
+  src: url("/fonts/hadasimclm/hadasimclm-regularoblique-webfont.ttf"); }
+/*------------------------------------------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0; }
+
+/*------------------------------------------------------------------------------------------------------*/
+nav {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0); }
+  nav li {
+    padding: 0 15px; }
+
+#coverImg {
+  height: 500px;
+  background-image: url("../img/math6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+  overflow-x: hidden; }
+
+#headline {
+  position: relative;
+  left: 650px;
+  top: 280px;
+  color: white; }
+  #headline h1 {
+    font-family: hadasimclm;
+    font-size: 70px;
+    border-bottom: 5px solid #FFDBAE; }
+
+#chapters .card {
+  margin: 40px 40px; }
+  #chapters .card img {
+    height: 170px;
+    padding-top: 10px; }
+
+footer {
+  background-color: #383838;
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+  footer i {
+    color: white; }
+  footer #contactDetails {
+    position: relative;
+    top: 30px; }
+    footer #contactDetails i {
+      margin: 0px 0px; }
+      footer #contactDetails i p {
+        font-size: 25px;
+        position: relative;
+        left: 100px;
+        bottom: 40px; }
+  footer #copyRight {
+    color: white;
+    position: absolute;
+    left: 600px;
+    bottom: -800px; }
+
+/*# sourceMappingURL=style.css.map */
