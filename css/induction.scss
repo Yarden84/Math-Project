@@ -1,0 +1,68 @@
+@import "mixins";
+@import "variables";
+
+/*------------------------------------------------------------------------------------------------------*/
+
+*{
+  @include total;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+nav{
+  @include navbar;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.bg{
+  background-color: $color-complement-1;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.content{
+
+  @include content;
+
+  .content1, .content2{
+    @include section;
+  }
+
+  ol{
+    margin-right: 30px;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  .questions{
+    @include questions;
+  }
+
+
+  #box{
+    margin-right: 100px;
+    font-size: 14px;
+    border: 1px solid black;
+    width: 70%;
+    padding: 10px 20px;
+  }
+
+
+  .disabledBtn, .content1Btn, .content2Btn{
+    padding-right: 40px;
+  }
+  .allChaptersBtn{
+    margin-right: 440px;
+  }
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+footer{
+  @include footer;
+}

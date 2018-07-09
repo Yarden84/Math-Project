@@ -1,0 +1,72 @@
+@import "mixins";
+@import "variables";
+
+/*------------------------------------------------------------------------------------------------------*/
+
+*{
+  @include total;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+nav{
+  @include navbar;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.bg{
+  background-color: $color-complement-1;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.content{
+
+  @include content;
+
+  .content1{
+    @include section;
+  }
+
+  #img1{
+    margin-right: 80px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .questions{
+    @include questions;
+
+    h6{
+      position: relative;
+      left: 15px;
+    }
+  }
+
+  .answer1, .answer2{
+    display: inline;
+  }
+
+  .content1Btn{
+    padding-right: 40px;
+  }
+  .content2Btn{
+    padding-right: 40px;
+  }
+  .content3Btn{
+    padding-right: 40px;
+  }
+  .content4Btn{
+    margin-right: 420px;
+  }
+
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+footer{
+  @include footer;
+}

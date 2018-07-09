@@ -1,0 +1,154 @@
+@import "mixins";
+@import "variables";
+
+/*------------------------------------------------------------------------------------------------------*/
+
+*{
+  @include total;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+nav{
+  @include navbar;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.bg{
+  background-color: $color-complement-1;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.content{
+
+  @include content;
+
+  h5{
+    padding-right: 20px;
+  }
+
+  #img1{
+    position: relative;
+    right: 100px;
+  }
+
+  #img2{
+    position: relative;
+    right: 250px;
+  }
+
+  #img3{
+    position: relative;
+    right: 80px;
+    bottom: 10px;
+  }
+
+  #img4{
+    position: relative;
+    right: 250px;
+  }
+
+  
+  .content1, .content2{
+    @include section;
+  }
+
+  #fraction1{
+      #top1{
+        border-bottom: 1px solid black;
+        width: 35px;
+      }
+      #bottom1{
+        position: relative;
+        bottom: 17px;
+      }
+      #sentence1{
+          position: relative;
+          right: 40px;
+          bottom: 70px;
+      }
+  }
+
+  #fraction2{
+    position: relative;
+        right: 200px;
+        bottom: 110px;
+    #top2{
+      border-bottom: 1px solid black;
+      width: 72px;
+    }
+    #bottom2{
+      position: relative;
+      bottom: 17px;
+      right: 15px;
+    }
+    #sentence2{
+        position: relative;
+        left: 200px;
+        top: 50px;
+    }
+    #equal{
+        position: relative;
+        right: 75px;
+        bottom: 70px;
+    }
+  }
+
+    .block1{
+      position: relative;
+      bottom: 180px;
+    }
+
+    .block2{
+        position: relative;
+        bottom: 150px;
+        left: 15px;
+    }
+
+    .block3{
+        position: relative;
+        bottom: 150px;
+        // left: 15px;
+    }
+
+
+    .questions{
+        @include questions;
+    }
+
+    table{
+        td:nth-child(1){
+            width: 30px;
+            border: 1px solid black;
+        }
+        td:nth-child(n+2):nth-child(-n+4){
+            width: 70px;
+            border: 1px solid black;
+        }
+        td:nth-child(5){
+            width: 150px;
+            border: 1px solid black;
+        }
+    }
+
+  .answer1{
+    color: blue;
+  }
+
+    .disabledBtn, .content1Btn, .content2Btn{
+        padding-right: 40px;
+    }
+    .allChaptersBtn{
+        margin-right: 440px;
+    }
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+footer{
+  @include footer;
+}

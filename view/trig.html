@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Trigonometria</title>
+    <link rel="stylesheet" type="text/css" href="../css/trig.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light row">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="חיפוש" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                </form>
+            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">צרו קשר</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="rtl">
+                        נושאים
+                        <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-right" href="inequation.html">אי שוויון עם ערך מוחלט</a>
+                        <a class="dropdown-item text-right" href="wordProblems.html">בעיות מילוליות</a>
+                        <a class="dropdown-item text-right" href="induction.html">אינדוקציה מתמטית</a>
+                        <a class="dropdown-item text-right" href="calculus.html">חשבון דיפרנציאלי ואינטגרלי</a>
+                        <a class="dropdown-item text-right" href="trig.html">טריגונומטריה</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">אודות</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">דף הבית</a>
+                </li>
+            </ul>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+
+    <div class="bg">
+        <div class="container text-right content" dir="rtl">
+
+            <h1 class="text-center">טריגונומטריה</h1> 
+
+            <br>
+
+            <button class="btn btn-link content1Btn">רקע</button>
+
+            <div class="content1">
+                <p>הטריגונומטריה נחקרה עוד בימי היוונים הקדמונים לשם הבנת הקשרים בין צלעות לזוויות במשולשים שונים; תחילה במשולשים ישרי זווית ואחר כך גם במשולשים כלליים. עם הזמן הורחבה הטריגונומטריה גם לשטחים נוספים. ככל שהתפתח המדע בעידן המודרני, כך הורגש הצורך למצוא פונקציה מחזורית שתיתן תשובה הולמת לחקר התופעות שאנו מוצאים ביקום. היקום שלנו מחזורי מאוד; החל מתנועות האלקטרונים עבוֹר בגלים ועד תנועות הכוכבים. המחזוריות שולטת בקצב הלב כמו בתנועת גלגלים וטורבינות. אם נתבונן קצת סביבנו, נבחין כי אין כמעט מערכת שאיננה מחזורית או תלויה במחזוריות. לכן כיום משתמשים בפונקציות טריגונומטרית לתיאור פונקציות מחזוריות ללא כל תלות בזוויות ובגיאומטריה. </p>
+                <p>בספר זה לא נלמד על פי התפתחות הטריגונומטריה, אלא דווקא נתחיל בהבנת הפונקציה הטריגונומטרית וכמקרה פרטי שלה נתמודד עם בעיות גיאומטריות.</p>
+
+                <br>
+
+                <p>הצורה המושלמת המוכרת לנו לתיאור מחזוריות, היא המעגל. כולנו חשים שהמעגל סובב וחוזר לנקודת ההתחלה. בהביטנו על השעון, אנו רואים כיצד בכל  12 שעות המחוגים חוזרים בדיוק למצבם הקודם. לו היה מחוג השעות שובת, היינו מתקשים לדעת את השעה, על אף שהיינו יודעים את הדקות. לכן נבחרה צורה זו לתאר פונקציות מחזוריות. </p>
+                <p>מעבר לכך: אם נְדַמֶּה לעצמנו משטח המסתובב סביב ציר מרכזי על שולחן (כדוגמת התקליטים של העבר) ונעמיד עליו נר, נוכל לראות את מסלול הנר. אולם אם נקפיד לשמור את גובה העיניים בדיוק בגובה השולחן, לא נראה את מסלול הנר האמיתי, אלא נראה כאילו הוא נע על קו ישר בתנועה מחזורית ימינה ושמאלה. את פונקציית התנועה שלו אנו מחפשים. ברור לנו שכל נקודה בתנועה הנראית, תלויה בזווית שבה המשטח מסתובב.</p>
+               
+                        
+                    <ol>
+                        כדי שנוכל להשתמש בדוגמה זו ליצירת פונקציה מחזורית, עלינו להקדים וללמוד שני נושאים:
+                        <li style="margin-right: 40px;">מהי זווית וכיצד להגדיר אותה  </li>
+                        <li style="margin-right: 40px;">מערכת קואורדינטות קוטבית</li>
+                    </ol>
+               
+
+                <br>
+
+                <p><u>רקע הסטורי</u></p>
+                <p>עד היום למדתם שגודל של זווית הוא מספר המעלות שעוברת הקשת המתאימה לזווית. ומעלה מוגדרת כ - <sup>1</sup>&frasl;<sub>360</sub>  מאורך קשת המעגל. </p>
+                <p>מניסיוני, תלמידים מקבלים דברים כמות שהם (כי המורה אמרה..) לא שמעתי אף לא פעם אחת את השאלה: מדוע החלוקה המוזרה הזו ל- 360? מדוע לא חולק המעגל ל- 100  או אולי ל- 1000? הרי לוּ הייתה המעלה מחולקת לגודל עשרוני, היה קל יותר לבטא חלקי זוויות, ולא היינו זקוקים להגדרות כמו דקה (שהיא <sup>1</sup>&frasl;<sub>60</sub> של מעלה) או שנייה (שהיא <sup>1</sup>&frasl;<sub>60</sub> של דקה).</p>
+                <p>ובכן כדי לענות על שאלה מציקה זו עלינו לחזור לימים בהם נחקרו גרמי השמים והותוו מעגלים. ימים אלה ירחיקו אותנו עד לתקופה הבבלית. הבבלים היו הראשונים שיצרו את התיארוך על פי תנועת הארץ אל מול קבוצות הכוכבים שאנו מכירים אותן כמזלות. הם שמו לב למחזוריות ולתנועה המעגלית ובנו את המעגל על פי תפיסתם. מכיוון שהמספר  6  וכפולותיו היה מספר בעל משמעות מיסטית עבורם, חילקו את המעגל        ל –  360, ועל פי מספר זה קבעו את גודל המעלה.</p>
+                <p>ראוי לציין שהמספר  60  מתחלק בהרבה מאוד מספרים טבעיים ללא שארית: 
+                    <br>
+                (1, 2 ,3, 4, 5, 6, 10, 12, 15, 20, 30, 60).
+                </p>
+                <p>הסבר זה בא כדי להציג שהמעלה היא גודל שרירותי שאין מאחוריו כל כוונה מתמטית. כאשר התפתחה השיטה העשרונית (מאות שנים אחר כך), כבר היו ענף הגיאומטריה וחקר המעגלים מפותחים מאוד יחסית, ולא היה הגיוני לשנות את גודל המעלה לשיטה עשרונית. כך מלווה אותנו המעלה עד היום. כך אנו מוצאים את קווי האורך וקווי הרוחב של הגלובוס מחושבים עדיין לפי שיטה זו, וכן את תזוזות מחוגי השעון על פי  חלוקה ל- 24  שעות ול- 60 דקות ול- 60 שניות. כאשר התפתחו המדע והמתמטיקה, היה צורך לבטא את הזווית כמספר טהור ולא כמספר עם מֵמד. חקירת פונקציה באופן מתמטי אינה סובלת מְמדים אלא מספרים טהורים בלבד. </p>
+                <p>לשם כך הוגדרה זווית באופן שונה. </p>
+            </div>
+
+            <br><br>
+            <button class="btn btn-link content2Btn">הרדיאן</button>
+
+            <div class="content2">
+                
+                <ol><li><u>הגדרה מחודשת של זווית -  הגדרה על פי יחס אורכים</u></li></ol>
+                <p>מהגאומטריה למדנו שאורך קשת מעגל היא פרופורציונלית לאורך הרדיוס, 
+                        כפי שאנו רואים בשִׂרטוט:
+                </p>
+
+                <div class="row">
+                    
+                    <div class="col-md-6">
+                        <img src="../img/trig8.jpg" alt="no image" id="img1">
+                        <p>מכאן הדרך קצרה להגדרת זווית 
+                                על פי יחס האורכים. כפי שאנו יודעים, 
+                                יחס הוא תמיד מספר טהור. במקרה שלנו:</p>
+                        <div id="fraction1">
+                            <p id="top1">אורך</p>
+                            <p id="bottom1">אורך</p>
+                            <p id="sentence1">= מספר חסר ממדים. כך הגדרנו זווית ללא מְמדים.</p>
+                        </div>
+                        
+                        <div id="fraction2">
+                            <p  id="sentence2">כך אנו מגדירים את הזווית:  </p>
+                            <p id="top2">אורך קשת</p>
+                            <p id="bottom2">רדיוס</p>
+                            <p id="equal">= &alpha;</p>
+                        </div>
+
+                        
+                        
+                        <div class="row block1">
+                            <div class="col-md-2">
+                                <p>בפועל:</p>
+                            </div>
+                            <div class="col-md-10">
+                                <p>&alpha;=1 &ensp; כאשר אורך הקשת שווה בדיוק לאורך הרדיוס.</p>
+                                <p>&alpha;=2 &ensp; כאשר אורך הקשת כפול מאורך הרדיוס.</p>
+                                <p>&alpha;=&pi; &ensp; כאשר אורך הקשת הוא בדיוק חצי מעגל. </p>
+                            </div>
+                        </div>
+
+                        <div class="row block1">       
+                                <p>נקודה נוספת חשובה היא שאנו תמיד מתחילים
+                                        למדוד את הזווית מהכיוון החיובי של ציר ה- x , בתנועה
+                                        <u>נגד כיוון השעון</u>.  כמו שרואים את כיוון הזוויות בציור.
+                                </p>        
+                        </div>
+
+                        <div class="row block1">       
+                            <p>זוויות שליליות נמדדות מהכיוון החיובי של ציר ה-x           
+                                            כאשר החץ הוא בכיוון ההפוך,
+                                            כלומר <u>עם כיוון השעון</u>.
+                            </p>        
+                        </div>
+                            
+                    </div>
+
+                    <div class="col-md-6">
+                            <img src="../img/trig9.jpg" alt="no image">
+                            <img src="../img/trig10.jpg" alt="no image">
+                            <img src="../img/trig11.jpg" alt="no image">
+                    </div>
+                </div>
+
+                <div class="block2">
+
+                    <p>כדי להבין אם אנו מציגים זווית במעלות או במספר טהור, נהוג לסמן את שיטת המדידה. שיטת המדידה  לפי יחס האורכים נקראת רדיאן, או בסימולה הבינלאומי  rad. אולם אסור לנו לטעות! אין הרדיאן מבטא מֵמד. להפך - הוא מבטא מספר טהור.</p>
+                    <p>כך נוכל להפריד בין &alpha;=2&deg;  המצביעה על זווית חדה בעלת מֵמד של מעלות, לבין &alpha;=2<span style="font-size: 10px;">rad</span>  המבטאת זווית קהה. </p>
+                    <p>כבר גילינו שהמעבר ממעלות לרדיאנים וההפך הוא על פי הפקטור:  180&deg;=<span style="font-size: 18px; position: relative; bottom: 3px;"><i>p</i></span><span style="font-size: 10px;">rad</span>   <span dir="ltr">(כאשר אורך הקשת הוא בדיוק חצי מעגל &alpha;=180&deg;)</span>.</p>
+                    <p>לכן אם רוצים לעבור מגודל זווית במעלות לגודלה ברדיאנים, משתמשים בנוסחה:</p>
+                    <img src="../img/trig12.jpg" alt="no image" id="img2">
+                    
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>כך אנו מוצאים ש:      </p>
+                            <br><br><br><br><br><br><br>
+                            <p>וכן  הלאה. כמובן:  </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../img/trig13.jpg" alt="no image">
+                            <img src="../img/trig14.jpg" alt="no image" id="img3">
+                        </div>
+                    </div>
+
+                    <p>ולהֶפֶך אם רוצים לעבור מרדיאנים למעלות:</p>
+
+                    <img src="../img/trig15.jpg" alt="no image" id="img4">
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>כך מוצאים ש:</p>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../img/trig16.jpg" alt="no image">
+                            
+                        </div>
+                    </div>
+
+                    <p>במקרים רבים אנו משתמשים בכפולות של &pi;  כדי לציין זווית ברדיאנים. מאחר ש- &pi;  איננו מספר רציונלי, מדויק יותר לתאר את הזווית בדרך זו מאשר באופן עשרוני. אולם הדבר אינו הכרחי, באותו אופן ניתן לתאר את הקשר: 90&deg; = 1.57<span style="font-size: 10px;">rad</span>  </p>
+            
+                </div>
+
+                <div class="block3">
+                    <button class="btn btn-link understandBtn"><strong>בדיקת הבנה</strong></button>
+                    <img src="../img/understand5.jpg" alt="no image" class="understandImg">
+                    <div class="questions">
+                    
+                        <p>כדי לחוש את גודל הזוויות ברדיאנים השלימו את הטבלה שלפניכם:</p>
+
+                        <table>
+                            <tr>
+                                <td class="text-center"></td>
+                                <td class="text-center">הזווית במעלות</td>
+                                <td class="text-center">הזווית ברדיאן ככפולה של p</td>
+                                <td class="text-center">הזווית ברדיאן בכתיבה עשרונית</td>
+                                <td class="text-center">
+                                    המיקום לפי רביעים
+                                <img src="../img/trig17.jpg" alt="no image">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1.</td>
+                                <td class="text-center">90</td>
+                                <td class="text-center"><sup>1</sup>&frasl;<sub>2</sub> </td>
+                                <td class="text-center">1.57</td>
+                                <td class="text-center">על הציר האנכי</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2.</td>
+                                <td class="text-center">45-</td>
+                                <td class="text-center"><sup>1</sup>&frasl;<sub>4</sub></td>
+                                <td class="text-center">0.785-</td>
+                                <td class="text-center">רביעי</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3.</td>
+                                <td class="text-center">120</td>
+                                <td class="text-center"><span class="answer1"><sup>2</sup>&frasl;<sub>3</sub></span></td>
+                                <td class="text-center"><span class="answer1">2.09</span></td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4.</td>
+                                <td class="text-center">150</td>
+                                <td class="text-center"><span class="answer1"><sup>5</sup>&frasl;<sub>6</sub></span></td>
+                                <td class="text-center"><span class="answer1">2.62</span></td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5.</td>
+                                <td class="text-center">225-</td>
+                                <td class="text-center"><span class="answer1">1.25-</td>
+                                <td class="text-center"><span class="answer1">3.93-</span></td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6.</td>
+                                <td class="text-center"><span class="answer1">135</span></td>
+                                <td class="text-center"><sup>3</sup>&frasl;<sub>4</sub></td>
+                                <td class="text-center"><span class="answer1">2.36</span></td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7.</td>
+                                <td class="text-center"><span class="answer1">270</span></td>
+                                <td class="text-center"><sup>3</sup>&frasl;<sub>2</sub></td>
+                                <td class="text-center"><span class="answer1">4.71</span></td>
+                                <td class="text-center"><span class="answer1">ציר אנכי</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">8.</td>
+                                <td class="text-center"><span class="answer1">396</span></td>
+                                <td class="text-center"><sup>11</sup>&frasl;<sub>5</sub></td>
+                                <td class="text-center"><span class="answer1">6.91</span></td>
+                                <td class="text-center"><span class="answer1">ראשון</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">9.</td>
+                                <td class="text-center"><span class="answer1">210-</span></td>
+                                <td class="text-center"><sup>7</sup>&frasl;<sub>6</sub>-</td>
+                                <td class="text-center"><span class="answer1">3.67-</span></td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">10.</td>
+                                <td class="text-center"><span class="answer1">57.29</span></td>
+                                <td class="text-center"><span class="answer1">0.32</span></td>
+                                <td class="text-center">1</td>
+                                <td class="text-center"><span class="answer1">ראשון</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">11.</td>
+                                <td class="text-center"><span class="answer1">128.91</span></td>
+                                <td class="text-center"><span class="answer1">0.72</span></td>
+                                <td class="text-center">2.25</td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">12.</td>
+                                <td class="text-center"><span class="answer1">246.37-</span></td>
+                                <td class="text-center"><span class="answer1">1.37-</span></td>
+                                <td class="text-center">4.3-</td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">13.</td>
+                                <td class="text-center"><span class="answer1">458.37</span></td>
+                                <td class="text-center"><span class="answer1">2.55</span></td>
+                                <td class="text-center">8</td>
+                                <td class="text-center"><span class="answer1">שני</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">14.</td>
+                                <td class="text-center"><span class="answer1">30.37-</span></td>
+                                <td class="text-center"><span class="answer1">0.17-</span></td>
+                                <td class="text-center">0.53-</td>
+                                <td class="text-center"><span class="answer1">רביעי</span></td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <button class="btn btn-link answer1Btn">תשובות</button>
+                    
+                    </div>
+
+                </div>
+            </div>
+
+            <br><br><br><br>
+
+            <h5>פונקציות טריגונומטריות</h5>
+            
+            <br>
+
+            <button class="btn btn-link content3Btn disabledBtn" disabled>הגדרות, זהויות ומשוואות</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content4Btn disabledBtn" disabled>חקירת הפונקציה הטריגונומטרית</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content5Btn disabledBtn" disabled>משיק ונורמל</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content6Btn disabledBtn" disabled>מקסימום ומינימום מקומי ומוחלט</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content7Btn disabledBtn" disabled>נגזרת של פונקציה סתומה</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content8Btn disabledBtn" disabled>אינטגרל של פונקציה טריגונומטרית</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br><br><br>
+
+            <h5>טריגונומטריה של מצולעים ושל גופים מרחביים</h5>
+            
+            <br>
+
+            <button class="btn btn-link content9Btn disabledBtn" disabled>משפט הסינוסים</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content10Btn disabledBtn" disabled>משפט הקוסינוסים</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content11Btn disabledBtn" disabled>טריגונומטריה במרחב</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content12Btn disabledBtn" disabled>בעיות ערך קיצון בטריגונומטריה</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+            <br><br>
+            <button class="btn btn-link content13Btn allChaptersBtn" disabled>כל הפרקים המלאים</button>
+            <i class="fas fa-2x fa-cart-arrow-down"></i>
+
+        </div>
+    </div>
+
+    <footer>
+
+        <div id="contactDetails">
+            <i class="far fa-2x fa-envelope container float-right" id="envelopeSymbol"><p>haizler@gmail.com</p></i>
+            <i class="fas fa-2x fa-phone-square container float-right" id="phoneSymbol"><p>050-2140244</p></i>
+        </div>
+    
+        <div id="copyRight">
+                <i class="far fa-copyright"><p>כל הזכויות שמורות לישראל הייזלר</p></i>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/lessons.js"></script>
+</body>
+</html>

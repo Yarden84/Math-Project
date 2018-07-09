@@ -1,0 +1,136 @@
+@mixin total{
+  padding: 0;
+  margin: 0;
+}
+
+@mixin navbar{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  li{
+    padding: 0 15px;
+  }
+}
+
+@mixin footer{
+
+  background-color: #383838;
+  height: 180px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  #contactDetails{
+    position: relative;
+    top:30px;
+    #envelopeSymbol{
+      color: white;
+    }
+
+    #phoneSymbol{
+      color: white;
+      position: relative;
+      bottom: 20px;
+    }
+
+    p{
+      font-size: 20px;
+      position: relative;
+      left: 100px;
+      bottom: 25px;
+    }
+  }
+
+  #copyRight{
+    color: white;
+    position: relative;
+    left: 570px;
+    top: 150px;
+    p{
+      position: relative;
+      left: 25px;
+      bottom: 17px;
+    }
+  }
+}
+
+
+
+@mixin content{
+
+  border-radius: 20px;
+  box-shadow: 2px 0 15px 0;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 30px;
+  min-height: 500px;
+
+
+  .fa-cart-arrow-down{
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  h1{
+    font-family: hadasimclm;
+    font-size: 45px;
+  }
+
+  p{
+    margin-top: 15px;
+  }
+  pre{
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .understandImg{
+    position: relative;
+    height: 80px;
+    margin-top: 20px;
+  }
+  .understandBtn{
+    margin-right: 100px;
+  }
+
+  /*img animations:*/
+  .spinImg{
+    animation: spin 1s linear infinite;
+  }
+
+
+  @keyframes spin {
+    0%{
+      transform: rotate(0deg);
+    }
+
+    25%{
+      transform: rotate(20deg);
+    }
+
+    50%{
+      transform: rotate(0deg);
+    }
+
+    75%{
+      transform: rotate(-20deg);
+    }
+  }
+
+}
+
+
+@mixin section{
+  padding: 0 50px;
+  margin: 0 30px;
+  border-right: 1px solid #A9A9A9;
+  border-left: 1px solid #A9A9A9;
+}
+
+@mixin questions{
+  position: relative;
+  right: 100px;
+  bottom: 20px;
+  border-right: 3px solid black;
+  padding-right: 30px;
+}
