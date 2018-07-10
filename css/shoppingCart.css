@@ -1,0 +1,92 @@
+/*------------------------------------------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+nav {
+  position: fixed;
+  background-color: transparent;
+}
+
+nav li {
+  padding: 0 15px;
+}
+
+nav .items {
+  position: relative;
+  top: 15px;
+  right: 30px;
+  background-color: orange;
+  color: white;
+  height: 20px;
+  width: 15px;
+  text-align: center;
+}
+
+nav .items .itemsNum {
+  position: relative;
+  bottom: 2px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+.content {
+  min-height: 400px;
+  padding-top: 50px;
+}
+
+.content .item {
+  text-align: right;
+  position: relative;
+  right: 270px;
+}
+
+.content .removeBtn {
+  position: relative;
+  left: 20px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+footer {
+  background-color: #383838;
+  height: 180px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+footer #contactDetails {
+  position: relative;
+  top: 30px;
+}
+
+footer #contactDetails #envelopeSymbol {
+  color: white;
+}
+
+footer #contactDetails #phoneSymbol {
+  color: white;
+  position: relative;
+  bottom: 20px;
+}
+
+footer #contactDetails p {
+  font-size: 20px;
+  position: relative;
+  left: 100px;
+  bottom: 25px;
+}
+
+footer #copyRight {
+  color: white;
+  position: relative;
+  left: 570px;
+  top: 150px;
+}
+
+footer #copyRight p {
+  position: relative;
+  left: 25px;
+  bottom: 17px;
+}
+/*# sourceMappingURL=shoppingCart.css.map */

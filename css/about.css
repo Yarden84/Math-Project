@@ -14,25 +14,9 @@ nav li {
   padding: 0 15px;
 }
 
-nav .items {
-  position: relative;
-  top: 15px;
-  right: 30px;
-  background-color: orange;
-  color: white;
-  height: 20px;
-  width: 15px;
-  text-align: center;
-}
-
-nav .items .itemsNum {
-  position: relative;
-  bottom: 2px;
-}
-
 /*------------------------------------------------------------------------------------------------------*/
 .bg {
-  background-color: #8FB5CB;
+  background-color: #F2C389;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
@@ -47,15 +31,13 @@ nav .items .itemsNum {
   padding: 50px 30px;
   min-height: 500px;
   /*img animations:*/
+  padding-right: 50px !important;
 }
 
-.content .shoppingCart {
-  margin-right: 6px;
-}
-
-.content .shoppingCartLink {
-  color: inherit;
-  text-decoration: none;
+.content .fa-cart-arrow-down {
+  position: relative;
+  top: 10px;
+  cursor: pointer;
 }
 
 .content h1 {
@@ -125,50 +107,17 @@ nav .items .itemsNum {
   }
 }
 
-.content .content1 {
-  padding: 0 50px;
-  margin: 0 30px;
-  border-right: 1px solid #A9A9A9;
-  border-left: 1px solid #A9A9A9;
+.content .details {
+  padding-right: 20px;
+  width: 800px;
 }
 
-.content #img1 {
-  margin-right: 80px;
-  position: relative;
-  bottom: 10px;
+.content table {
+  margin-right: 165px;
 }
 
-.content .questions {
-  position: relative;
-  right: 100px;
-  bottom: 20px;
-  border-right: 3px solid black;
-  padding-right: 30px;
-}
-
-.content .questions h6 {
-  position: relative;
-  left: 15px;
-}
-
-.content .answer1, .content .answer2 {
-  display: inline;
-}
-
-.content .content1Btn {
-  padding-right: 40px;
-}
-
-.content .content2Btn {
-  padding-right: 40px;
-}
-
-.content .content3Btn {
-  padding-right: 40px;
-}
-
-.content .content4Btn {
-  margin-right: 420px;
+.content table tr:nth-child(7) td:nth-child(2) {
+  border-top: 1px solid black;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -213,4 +162,4 @@ footer #copyRight p {
   left: 25px;
   bottom: 17px;
 }
-/*# sourceMappingURL=inequation.css.map */
+/*# sourceMappingURL=about.css.map */

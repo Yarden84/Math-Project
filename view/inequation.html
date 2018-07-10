@@ -19,6 +19,14 @@
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="חיפוש" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-2x fa-cart-arrow-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="items"><strong><span class="itemsNum"></span></strong></div>
+                        </li>
+                    </ul>
                 </form>
             </div>
             <ul class="navbar-nav mr-auto">
@@ -28,7 +36,7 @@
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="rtl">
                         נושאים
-                        <span class="sr-only">(current)</a>
+                        <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item text-right" href="inequation.html">אי שוויון עם ערך מוחלט</a>
                         <a class="dropdown-item text-right" href="wordProblems.html">בעיות מילוליות</a>
@@ -38,7 +46,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">אודות</a>
+                    <a class="nav-link" href="about.html">אודות</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">דף הבית</span></a>
@@ -86,7 +94,6 @@
 
 
                 <button class="btn btn-link understandBtn"><strong>בדיקת הבנה</strong></button>
-                <!--<br>-->
                 <img src="../img/understand5.jpg" alt="no image" class="understandImg">
                 <div class="questions">
                     <h6>פתרו את אי השוויונות הבאים:</h6>
@@ -107,15 +114,16 @@
             </div>
 
             <br><br>
-            <button class="btn btn-link content2Btn" disabled>או שוויון עם ערך מוחלט</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content2Btn" disabled>אי שוויון עם ערך מוחלט</button>
+            <!-- <a href="shoppingCart.html" class="shoppingCartLink"><button class="btn btn-warning">הוסף לעגלת קניות<i class="fas fa-2px fa-cart-arrow-down shoppingCart"></i></button></a> -->
+            
             <br><br>
             <button class="btn btn-link content3Btn" disabled>אי שיוויון עם רב איבר בערך מוחלט</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <!-- <a href="shoppingCart.html" class="shoppingCartLink"><button class="btn btn-warning">הוסף לעגלת קניות<i class="fas fa-2px fa-cart-arrow-down shoppingCart"></i></button></a> -->
 
             <br><br><br><br>
             <button class="btn btn-link content4Btn" disabled>כל הפרקים המלאים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <a href="shoppingCart.html" class="shoppingCartLink" id="inequation"><button class="btn btn-warning shoppingBtn inequation">הוסף לעגלת קניות<i class="fas fa-2px fa-cart-arrow-down shoppingCart"></i></button></a>
 
         </div>
     </div>
@@ -138,5 +146,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/lessons.js"></script>
+    <script src="../js/shoppingCart.js"></script>
 </body>
 </html>

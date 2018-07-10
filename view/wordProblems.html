@@ -19,6 +19,14 @@
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="חיפוש" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-2x fa-cart-arrow-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="items"><strong><span class="itemsNum"></span></strong></div>
+                        </li>
+                    </ul>
                 </form>
             </div>
             <ul class="navbar-nav mr-auto">
@@ -38,7 +46,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">אודות</a>
+                    <a class="nav-link" href="about.html">אודות</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">דף הבית</a>
@@ -320,7 +328,7 @@
 
             <br><br><br><br>
             <button class="btn btn-link content4Btn" disabled>כל הפרקים המלאים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <a href="shoppingCart.html" class="shoppingCartLink" id="wordProblems"><button class="btn btn-warning shoppingBtn wordProblems">הוסף לעגלת קניות<i class="fas fa-2px fa-cart-arrow-down shoppingCart"></i></button></a>
 
         </div>
     </div>
@@ -343,5 +351,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/lessons.js"></script>
+    <script src="../js/shoppingCart.js"></script>
 </body>
 </html>
