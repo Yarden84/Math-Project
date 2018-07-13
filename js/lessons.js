@@ -1,6 +1,18 @@
-$('.questions').hide();
-$('.content1').hide();
+var indexBtn = (localStorage.getItem('indexBtn') == 'true');
+
+if (!indexBtn){
+    $('.content1').hide();
+}
+else{
+    $('.content1').show();
+    localStorage.setItem('indexBtn', false);
+}
+
+
+
 $('.content2').hide();
+
+$('.questions').hide();
 $('.answer1').hide();
 $('.answer2').hide();
 $('.answer3').hide();

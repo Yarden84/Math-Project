@@ -2,7 +2,7 @@
 
 var totalPrice = 0;
 var chapterName = localStorage.getItem('chapterName');
-var cartNotEmpty = localStorage.getItem('cartNotEmpty');
+var cartNotEmpty = (localStorage.getItem('cartNotEmpty') == 'true');
 var y = localStorage.getItem('numOfItems');
 
 /*--------------------------------------------------------------------------------------------------------------*/
@@ -30,8 +30,11 @@ $('.itemsNum').html(y);
 
 
 $('.items').hide();
+if (y==0){
+    localStorage.setItem('cartNotEmpty', false);
+}
 //Show number of items next to cart:
-if (cartNotEmpty){  
+if (cartNotEmpty && (y != 0)){  
     $('.items').show();
 }
 
@@ -212,7 +215,7 @@ $('.removeBtn').click(function(){
     totalPrice = totalPrice - price;
     $('.itemTotal').html(totalPrice);
     
-    $('.'+chapter+'Row').hide();
+    $('.'+chapter+'Row').remove();
 
     localStorage.removeItem('chapterName');
     localStorage.removeItem(chapter);
@@ -221,6 +224,10 @@ $('.removeBtn').click(function(){
     
     $('.itemsNum').html(y);  
     
+    for (i=1; i<=y; i++){
+        $('tbody tr:nth-child('+i+') th').html(i);
+    }
+
     
 });
 
