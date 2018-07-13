@@ -20,6 +20,22 @@ nav li {
   padding: 0 15px;
 }
 
+nav .items {
+  position: relative;
+  top: 15px;
+  right: 30px;
+  background-color: orange;
+  color: white;
+  height: 20px;
+  width: 15px;
+  text-align: center;
+}
+
+nav .items .itemsNum {
+  position: relative;
+  bottom: 2px;
+}
+
 /*------------------------------------------------------------------------------------------------------*/
 #coverImg {
   height: 500px;

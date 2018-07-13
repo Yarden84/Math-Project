@@ -38,11 +38,14 @@ if (cartNotEmpty){
 
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
-//reducing code returns:
-var chapters = ['inequation', 'wordProblems'];
+//setting items for shopping cart:
+
+var chapters = ['inequation', 'wordProblems', 'induction', 'calculus', 'trig'];
+
+
 if (chapterName === 'inequation'){
     localStorage.setItem(chapterName, true);
-    localStorage.setItem(chapterName+'Price', 12);
+    localStorage.setItem(chapterName+'Price', 10);
     localStorage.setItem(chapterName+'Item', `<tr class="inequationRow">
                                                 <th class="text-center" scope="row"></th>
                                                 <td class="item">
@@ -60,7 +63,7 @@ if (chapterName === 'inequation'){
 
 if (chapterName === 'wordProblems'){
     localStorage.setItem(chapterName, true);
-    localStorage.setItem(chapterName+'Price', 12);
+    localStorage.setItem(chapterName+'Price', 10);
     localStorage.setItem(chapterName+'Item', `<tr class="wordProblemsRow">
                                                 <th class="text-center" scope="row"></th>
                                                 <td class="item">
@@ -76,7 +79,110 @@ if (chapterName === 'wordProblems'){
                                             </tr>`);
 }
 
+if (chapterName === 'induction'){
+    localStorage.setItem(chapterName, true);
+    localStorage.setItem(chapterName+'Price', 10);
+    localStorage.setItem(chapterName+'Item', `<tr class="inductionRow">
+                                                <th class="text-center" scope="row"></th>
+                                                <td class="item">
+                                                    <p><strong><span style="font-size: 17px;">אינדוקציה מתמטית</span></strong></p>
+                                                    <ul>
+                                                        <li>רקע</li>
+                                                        <li>אינדוקציה של סדרות</li>
+                                                        <li>אינדוקציה עם הוספת מספר איברים</li>
+                                                        <li>אינדוקציה עם איבר ראשון משתנה</li>
+                                                        <li>אינדוקציה של איברים זוגיים או אי זוגיים</li>
+                                                        <li>אינדוקציה של התלכדות סדרות</li>
+                                                        <li>אינדוקציה של אי שוויון</li>
+                                                        <li>אינדוקציה של תכונות התחלקות</li>
+                                                    </ul>
+                                                    <button class="btn btn-link removeBtn" id="induction">הסר</button>
+                                                </td>
+                                                <td class="text-center inductionPrice"></td>               
+                                            </tr>`);
+}
 
+if (chapterName === 'calculus'){
+    localStorage.setItem(chapterName, true);
+    localStorage.setItem(chapterName+'Price', 15);
+    localStorage.setItem(chapterName+'Item', `<tr class="calculusRow">
+                                                <th class="text-center" scope="row"></th>
+                                                <td class="item">
+                                                    <p><strong><span style="font-size: 17px;">חשבון דיפרנציאלי ואינטגרלי</span></strong></p>
+                                                    <ul>
+                                                        <ul>
+                                                            <strong>חשבון דיפרנציאלי</strong>
+                                                            <li>רקע</li>
+                                                            <li>פונקציות-חזרה</li>
+                                                            <li>על סימטריה ומתמטיקה</li>
+                                                            <li>שיפוע של עקום</li>
+                                                            <li>מקסימום ומינימום מקומים ומוחלט</li>
+                                                            <li>חקירת פונקציה ושרטוט</li>
+                                                            <li>רציפות של פונקציה</li>
+                                                            <li>נגזרת שנייה</li>
+                                                            <li>נקודות אי רציפות ואסימפטוטות</li>
+                                                            <li>ניתוח אסימפטוטות אופקיות</li>
+                                                            <li>חקירת פונקציה עם פרמטרים</li>
+                                                            <li>מציאת משיקים לפונקציה</li>
+                                                            <li>הנורמל</li>
+                                                            <li>משיק לפונקציה דרך נקודה מחוץ לפונקציה</li>
+                                                            <li>בעיות מקסימום ומינימום</li>
+                                                            <li>נגזרת של פונקציה סתומה</li>
+                                                        </ul>  
+                                                        <br>
+                                                        <ul>
+                                                            <strong>חשבון אינטגרלי</strong>
+                                                            <li>מציאת פונקציה קדימה</li>
+                                                            <li>שימוש באינטגרל למציאת שטחים</li>
+                                                            <li>נפח גוף סיבוב</li>
+                                                        </ul>  
+                                                    </ul>
+                                                    <button class="btn btn-link removeBtn" id="calculus">הסר</button>
+                                                </td>
+                                                <td class="text-center calculusPrice"></td>               
+                                            </tr>`);
+}
+
+if (chapterName === 'trig'){
+    localStorage.setItem(chapterName, true);
+    localStorage.setItem(chapterName+'Price', 15);
+    localStorage.setItem(chapterName+'Item', `<tr class="trigRow">
+                                                <th class="text-center" scope="row"></th>
+                                                <td class="item">
+                                                    <p><strong><span style="font-size: 17px;">טריגונומטריה</span></strong></p>
+                                                    <ul>
+                                                            <ul>
+                                                                <li>רקע</li>
+                                                                <li>הרדיאן</li>
+                                                            </ul>  
+                                                            <br>                                                    
+                                                            <ul>
+                                                                <strong> פונקציות טריגונומטריות</strong>
+                                                                <li>הגדרות, זהויות ומשוואות</li>
+                                                                <li>חקירת הפונקציה הטריגונומטרית</li>
+                                                                <li>משיק ונורמל</li>
+                                                                <li>מקסימום ומינימום מקומי ומוחלט</li>
+                                                                <li>נגזרת של פונקציה סתומה</li>
+                                                                <li>אינטגרל של פונקציה טריגונומטרית</li>
+                                                            </ul>  
+                                                            <br>
+                                                            <ul>
+                                                                <li>טריגונומטריה של מצולעים ושל גופים מרחביים</li>
+                                                                <li>משפט הסינוסים</li>
+                                                                <li>משפט הקוסינוסים</li>
+                                                                <li>טריגונומטריה במרחב</li>
+                                                                <li>בעיות ערך קיצון בטריגונומטריה</li>
+                                                            </ul>  
+                                                        
+                                                    </ul>
+                                                    <button class="btn btn-link removeBtn" id="trig">הסר</button>
+                                                </td>
+                                                <td class="text-center trigPrice"></td>               
+                                            </tr>`);
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 for (i=0; i<=chapters.length; i++){
@@ -92,8 +198,6 @@ for (i=0; i<=chapters.length; i++){
         $('.itemRows').prepend(item);
         $('.'+chapters[i]+'Price').prepend(price + '  ש"ח');
         totalPrice = totalPrice + price;
-    
-    
     }
 
 }
@@ -107,16 +211,16 @@ $('.removeBtn').click(function(){
 
     totalPrice = totalPrice - price;
     $('.itemTotal').html(totalPrice);
-    console.log("totalPrice = " + totalPrice);
-   
-
+    
     $('.'+chapter+'Row').hide();
 
     localStorage.removeItem('chapterName');
     localStorage.removeItem(chapter);
     y--;
     localStorage.setItem('numOfItems', y);
-    $('.itemsNum').html(y);    
+    
+    $('.itemsNum').html(y);  
+    
     
 });
 
@@ -126,7 +230,7 @@ $('.removeBtn').click(function(){
 
 //numbering the shopping cart items:
 for (i=1; i<=y; i++){
-    $('tbody tr:nth-child('+i+') th').append(i);
+    $('tbody tr:nth-child('+i+') th').html(i);
 }
 
 
@@ -138,13 +242,17 @@ $('.itemTotal').append(totalPrice);
 
 
 
+
+
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*testings:*/
-
+// localStorage.setItem('numOfItems', y);
+// y=localStorage.getItem('numOfItems');
 console.log("Empty Cart = " + !cartNotEmpty);
 console.log("items = " + y);
 console.log("chapterName = " + chapterName);
+console.log("totalPrice = " + totalPrice);
 
 
 
@@ -157,6 +265,11 @@ console.log("chapterName = " + chapterName);
 // localStorage.removeItem('inequationPrice');
 // localStorage.removeItem('wordProblemsItem');
 // localStorage.removeItem('inequationItem');
-
+// localStorage.removeItem('trigPrice');
+// localStorage.removeItem('trigItem');
+// localStorage.removeItem('inductionPrice');
+// localStorage.removeItem('inductionItem');
+// localStorage.removeItem('calculusPrice');
+// localStorage.removeItem('calculusItem');
 
 
