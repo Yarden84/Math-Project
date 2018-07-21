@@ -31,6 +31,43 @@ nav .items .itemsNum {
 }
 
 /*------------------------------------------------------------------------------------------------------*/
+#searchResult {
+  position: absolute;
+  left: 33px;
+  top: 52px;
+  background-color: #3a87b4;
+  color: white;
+  width: 205px;
+}
+
+#searchResult .link {
+  position: relative;
+  right: 15px;
+  border-bottom: 1px solid #1B3F54;
+  width: 117%;
+  padding: 3px 0;
+}
+
+#searchResult .link a {
+  text-decoration: none;
+  color: inherit;
+  padding-right: 5px;
+}
+
+#searchResult .link:hover {
+  background-color: #f3f8fb;
+  color: black;
+}
+
+#searchLine {
+  background-image: url("../img/search.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  margin-left: 20px;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
 .content {
   min-height: 400px;
   padding-top: 50px;
@@ -50,7 +87,7 @@ nav .items .itemsNum {
 /*------------------------------------------------------------------------------------------------------*/
 footer {
   background-color: #383838;
-  height: 180px;
+  height: 120px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -62,18 +99,21 @@ footer #contactDetails {
 
 footer #contactDetails #envelopeSymbol {
   color: white;
+  position: relative;
+  left: 200px;
 }
 
 footer #contactDetails #phoneSymbol {
   color: white;
   position: relative;
-  bottom: 20px;
+  bottom: 68px;
+  left: 540px;
 }
 
 footer #contactDetails p {
   font-size: 20px;
   position: relative;
-  left: 100px;
+  left: 50px;
   bottom: 25px;
 }
 
@@ -81,7 +121,7 @@ footer #copyRight {
   color: white;
   position: relative;
   left: 570px;
-  top: 150px;
+  top: 90px;
 }
 
 footer #copyRight p {

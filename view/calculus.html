@@ -11,14 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<body>
+<body id="calculusPage">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light row">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="חיפוש" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                    <input class="form-control mr-sm-2" id="searchLine" type="search" placeholder="חיפוש" aria-label="Search" dir="rtl">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="shoppingCart.html"><i class="fas fa-2x fa-cart-arrow-down"></i></a>
@@ -31,7 +30,7 @@
             </div>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">צרו קשר</a>
+                    <a class="nav-link" href="contact.html">צרו קשר</a>
                 </li>
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="rtl">
@@ -59,19 +58,20 @@
         </nav>
     </div>
 
+    <div class="container text-right" id="searchResult"></div>
 
     <div class="bg">
         <div class="container text-right content" dir="rtl">
 
-            <h1 class="text-center">חשבון דיפרנציאלי ואינטגרלי</h1>
+            <h1 class="text-center" id="arr0">חשבון דיפרנציאלי ואינטגרלי</h1>
 
             <br><br>
 
-            <h5>חשבון דיפרנציאלי</h5>
+            <h5 id="arr1">חשבון דיפרנציאלי</h5>
 
             <br>
 
-            <button class="btn btn-link content1Btn">רקע</button>
+            <button class="btn btn-link content1Btn" id="arr2">רקע</button>
 
             <div class="content1">
                 
@@ -92,7 +92,7 @@
             </div>
 
             <br><br>
-            <button class="btn btn-link content2Btn">פונקציות-חזרה</button>
+            <button class="btn btn-link content2Btn" id="arr3">פונקציות-חזרה</button>
 
             <div class="content2">
                 
@@ -150,80 +150,62 @@
             </div>
 
             <br><br>
-            <button class="btn btn-link content3Btn disabledBtn" disabled>על סימטריה ומתמטיקה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content3Btn disabledBtn" id="arr4" disabled>על סימטריה ומתמטיקה</button>
 
             <br><br>
-            <button class="btn btn-link content4Btn disabledBtn" disabled>שיפוע של עקום</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content4Btn disabledBtn" id="arr5" disabled>שיפוע של עקום</button>
 
             <br><br>
-            <button class="btn btn-link content5Btn disabledBtn" disabled>מקסימום ומינימום מקומי ומוחלט</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content5Btn disabledBtn" id="arr6" disabled>מקסימום ומינימום מקומי ומוחלט</button>
 
             <br><br>
-            <button class="btn btn-link content6Btn disabledBtn" disabled>חקירת פונקציה ושרטוט</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content6Btn disabledBtn" id="arr7" disabled>חקירת פונקציה ושרטוט</button>
 
             <br><br>
-            <button class="btn btn-link content7Btn disabledBtn" disabled>רציפות של פונקציה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content7Btn disabledBtn" id="arr8" disabled>רציפות של פונקציה</button>
 
             <br><br>
-            <button class="btn btn-link content8Btn disabledBtn" disabled>נגזרת שנייה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content8Btn disabledBtn" id="arr9" disabled>נגזרת שנייה</button>
 
             <br><br>
-            <button class="btn btn-link content9Btn disabledBtn" disabled>נקודות אי רציפות ואסימפטוטות</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content9Btn disabledBtn" id="arr10" disabled>נקודות אי רציפות ואסימפטוטות</button>
 
             <br><br>
-            <button class="btn btn-link content10Btn disabledBtn" disabled>ניתוח אסימפטוטות אופקיות</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content10Btn disabledBtn" id="arr11" disabled>ניתוח אסימפטוטות אופקיות</button>
 
             <br><br>
-            <button class="btn btn-link content11Btn disabledBtn" disabled>חקירת פונקציה עם פרמטרים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content11Btn disabledBtn" id="arr12" disabled>חקירת פונקציה עם פרמטרים</button>
 
             <br><br>
-            <button class="btn btn-link content12Btn disabledBtn" disabled>מציאת משיקים לפונקציה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content12Btn disabledBtn" id="arr13" disabled>מציאת משיקים לפונקציה</button>
 
             <br><br>
-            <button class="btn btn-link content13Btn disabledBtn" disabled>הנורמל</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content13Btn disabledBtn" id="arr14" disabled>הנורמל</button>
 
             <br><br>
-            <button class="btn btn-link content14Btn disabledBtn" disabled>משיק לפונקציה דרך נקודה מחוץ לפונקציה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content14Btn disabledBtn" id="arr15" disabled>משיק לפונקציה דרך נקודה מחוץ לפונקציה</button>
 
             <br><br>
-            <button class="btn btn-link content15Btn disabledBtn" disabled>בעיות מקסימום ומינימום</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content15Btn disabledBtn" id="arr16" disabled>בעיות מקסימום ומינימום</button>
 
             <br><br>
-            <button class="btn btn-link content16Btn disabledBtn" disabled>נגזרת של פונקציה סתומה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content16Btn disabledBtn" id="arr17" disabled>נגזרת של פונקציה סתומה</button>
 
             <br><br><br><br>
 
-            <h5>חשבון אינטגרלי</h5>
+            <h5 id="arr18">חשבון אינטגרלי</h5>
 
             <br>
-            <button class="btn btn-link content17Btn disabledBtn" disabled>מציאת פונקציה קדימה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content17Btn disabledBtn" id="arr19" disabled>מציאת פונקציה קדימה</button>
 
             <br><br>
-            <button class="btn btn-link content18Btn disabledBtn" disabled>שימוש באינטגרל למציאת שטחים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content18Btn disabledBtn" id="arr20" disabled>שימוש באינטגרל למציאת שטחים</button>
 
             <br><br>
-            <button class="btn btn-link content19Btn disabledBtn" disabled>נפח גוף סיבוב</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content19Btn disabledBtn" id="arr21" disabled>נפח גוף סיבוב</button>
 
             <br><br>
-            <button class="btn btn-link content20Btn disabledBtn" disabled>תרגול כללי</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content20Btn disabledBtn" id="arr22" disabled>תרגול כללי</button>
 
             <br><br>
             <button class="btn btn-link content21Btn allChaptersBtn" disabled>כל הפרקים המלאים</button>
@@ -251,5 +233,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/lessons.js"></script>
     <script src="../js/shoppingCart.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 </html>

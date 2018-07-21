@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
 </head>
 <body>
 
@@ -18,8 +18,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="חיפוש" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                    <input class="form-control mr-sm-2" id="searchLine" type="search" placeholder="חיפוש" aria-label="Search" dir="rtl">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="view/shoppingCart.html"><i class="fas fa-2x fa-cart-arrow-down"></i></a>
@@ -32,7 +31,7 @@
             </div>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">צרו קשר</a>
+                    <a class="nav-link" href="view/contact.html">צרו קשר</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="rtl">
@@ -57,6 +56,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </nav>
+    </div>
+
+    <div class="container text-right" id="searchResult">
     </div>
 
     <div id="coverImg">
@@ -113,10 +115,11 @@
     </footer>
 
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/shoppingCart.js"></script>
     <script src="js/indexLink.js"></script>
+    <script src="js/search.js"></script>
 </body>
+
 </html>

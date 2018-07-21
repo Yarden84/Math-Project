@@ -17,8 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="חיפוש" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                    <input class="form-control mr-sm-2" id="searchLine" type="search" placeholder="חיפוש" aria-label="Search" dir="rtl">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="shoppingCart.html"><i class="fas fa-2x fa-cart-arrow-down"></i></a>
@@ -31,7 +30,7 @@
             </div>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">צרו קשר</a>
+                    <a class="nav-link" href="contact.html">צרו קשר</a>
                 </li>
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="rtl">
@@ -59,14 +58,16 @@
         </nav>
     </div>
 
+    <div class="container text-right" id="searchResult"></div>
+
     <div class="bg">
         <div class="container text-right content" dir="rtl">
 
-            <h1 class="text-center">אינדוקציה מתמטית</h1>
+            <h1 class="text-center" id="arr0">אינדוקציה מתמטית</h1>
 
             <br><br>
 
-            <button class="btn btn-link content1Btn">רקע</button>
+            <button class="btn btn-link content1Btn" id="arr1">רקע</button>
 
             <div class="content1">
 
@@ -85,7 +86,7 @@
             </div>
 
             <br><br>
-            <button class="btn btn-link content2Btn">אינדוקציה של סדרות</button>
+            <button class="btn btn-link content2Btn" id="arr2">אינדוקציה של סדרות</button>
 
             <div class="content2">
 
@@ -222,28 +223,22 @@
             </div>
 
             <br><br>
-            <button class="btn btn-link content3Btn disabledBtn" disabled>אינדוקציה עם הוספת מספר איברים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content3Btn disabledBtn" id="arr3" disabled>אינדוקציה עם הוספת מספר איברים</button>
 
             <br><br>
-            <button class="btn btn-link content4Btn disabledBtn" disabled>אינדוקציה עם איבר ראשון משתנה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content4Btn disabledBtn" id="arr4" disabled>אינדוקציה עם איבר ראשון משתנה</button>
 
             <br><br>
-            <button class="btn btn-link content5Btn disabledBtn" disabled>אינדוקציה של איברים זוגיים או אי זוגיים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content5Btn disabledBtn" id="arr5" disabled>אינדוקציה של איברים זוגיים או אי זוגיים</button>
 
             <br><br>
-            <button class="btn btn-link content6Btn disabledBtn" disabled>אינדוקציה של התלכדות סדרות</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content6Btn disabledBtn" id="arr6" disabled>אינדוקציה של התלכדות סדרות</button>
 
             <br><br>
-            <button class="btn btn-link content7Btn disabledBtn" disabled>אינדוקציה של אי שוויון</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content7Btn disabledBtn" id="arr7" disabled>אינדוקציה של אי שוויון</button>
 
             <br><br>
-            <button class="btn btn-link content8Btn disabledBtn" disabled>אינדוקציה של תכונות התחלקות</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content8Btn disabledBtn" id="arr8" disabled>אינדוקציה של תכונות התחלקות</button>
 
             <br><br>
             <button class="btn btn-link content9Btn allChaptersBtn" disabled>כל הפרקים המלאים</button>
@@ -271,5 +266,6 @@
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/lessons.js"></script>
 <script src="../js/shoppingCart.js"></script>
+<script src="../js/search.js"></script>
 </body>
 </html>

@@ -1,16 +1,27 @@
-var indexBtn = (localStorage.getItem('indexBtn') == 'true');
+var indexBtn1 = (localStorage.getItem('indexBtn1') == 'true');
+var indexBtn2 = (localStorage.getItem('indexBtn2') == 'true');
 
-if (!indexBtn){
+if (!indexBtn1){
     $('.content1').hide();
 }
 else{
-    $('.content1').show();
-    localStorage.setItem('indexBtn', false);
+    $('.content1').hide();
+    $('.content1').slideDown(800);
+    localStorage.setItem('indexBtn1', false);
+}
+
+if (!indexBtn2){
+    $('.content2').hide();
+}
+else{
+    $('.content2').hide();;
+    $('.content2').slideDown(800);
+    localStorage.setItem('indexBtn2', false);
 }
 
 
 
-$('.content2').hide();
+
 
 $('.questions').hide();
 $('.answer1').hide();

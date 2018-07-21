@@ -17,8 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="חיפוש" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">חיפוש</button>
+                    <input class="form-control mr-sm-2" id="searchLine" type="search" placeholder="חיפוש" aria-label="Search" dir="rtl">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="shoppingCart.html"><i class="fas fa-2x fa-cart-arrow-down"></i></a>
@@ -31,7 +30,7 @@
             </div>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">צרו קשר</a>
+                    <a class="nav-link" href="contact.html">צרו קשר</a>
                 </li>
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="rtl">
@@ -59,15 +58,17 @@
         </nav>
     </div>
 
+    <div class="container text-right" id="searchResult"></div>
+
 
     <div class="bg">
         <div class="container text-right content" dir="rtl">
 
-            <h1 class="text-center">טריגונומטריה</h1> 
+            <h1 class="text-center" id="arr0">טריגונומטריה</h1> 
 
             <br>
 
-            <button class="btn btn-link content1Btn">רקע</button>
+            <button class="btn btn-link content1Btn" id="arr1">רקע</button>
 
             <div class="content1">
                 <p>הטריגונומטריה נחקרה עוד בימי היוונים הקדמונים לשם הבנת הקשרים בין צלעות לזוויות במשולשים שונים; תחילה במשולשים ישרי זווית ואחר כך גם במשולשים כלליים. עם הזמן הורחבה הטריגונומטריה גם לשטחים נוספים. ככל שהתפתח המדע בעידן המודרני, כך הורגש הצורך למצוא פונקציה מחזורית שתיתן תשובה הולמת לחקר התופעות שאנו מוצאים ביקום. היקום שלנו מחזורי מאוד; החל מתנועות האלקטרונים עבוֹר בגלים ועד תנועות הכוכבים. המחזוריות שולטת בקצב הלב כמו בתנועת גלגלים וטורבינות. אם נתבונן קצת סביבנו, נבחין כי אין כמעט מערכת שאיננה מחזורית או תלויה במחזוריות. לכן כיום משתמשים בפונקציות טריגונומטרית לתיאור פונקציות מחזוריות ללא כל תלות בזוויות ובגיאומטריה. </p>
@@ -101,7 +102,7 @@
             </div>
 
             <br><br>
-            <button class="btn btn-link content2Btn">הרדיאן</button>
+            <button class="btn btn-link content2Btn" id="arr2">הרדיאן</button>
 
             <div class="content2">
                 
@@ -334,53 +335,43 @@
 
             <br><br><br><br>
 
-            <h5>פונקציות טריגונומטריות</h5>
+            <h5 id="arr3">פונקציות טריגונומטריות</h5>
             
             <br>
 
-            <button class="btn btn-link content3Btn disabledBtn" disabled>הגדרות, זהויות ומשוואות</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content3Btn disabledBtn" id="arr4" disabled>הגדרות, זהויות ומשוואות</button>
 
             <br><br>
-            <button class="btn btn-link content4Btn disabledBtn" disabled>חקירת הפונקציה הטריגונומטרית</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content4Btn disabledBtn" id="arr5" disabled>חקירת הפונקציה הטריגונומטרית</button>
 
             <br><br>
-            <button class="btn btn-link content5Btn disabledBtn" disabled>משיק ונורמל</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content5Btn disabledBtn" id="arr6" disabled>משיק ונורמל</button>
 
             <br><br>
-            <button class="btn btn-link content6Btn disabledBtn" disabled>מקסימום ומינימום מקומי ומוחלט</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content6Btn disabledBtn" id="arr7" disabled>מקסימום ומינימום מקומי ומוחלט</button>
 
             <br><br>
-            <button class="btn btn-link content7Btn disabledBtn" disabled>נגזרת של פונקציה סתומה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content7Btn disabledBtn" id="arr8" disabled>נגזרת של פונקציה סתומה</button>
 
             <br><br>
-            <button class="btn btn-link content8Btn disabledBtn" disabled>אינטגרל של פונקציה טריגונומטרית</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content8Btn disabledBtn" id="arr9" disabled>אינטגרל של פונקציה טריגונומטרית</button>
 
             <br><br><br><br>
 
-            <h5>טריגונומטריה של מצולעים ושל גופים מרחביים</h5>
+            <h5 id="arr10">טריגונומטריה של מצולעים ושל גופים מרחביים</h5>
             
             <br>
 
-            <button class="btn btn-link content9Btn disabledBtn" disabled>משפט הסינוסים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content9Btn disabledBtn" id="arr11" disabled>משפט הסינוסים</button>
 
             <br><br>
-            <button class="btn btn-link content10Btn disabledBtn" disabled>משפט הקוסינוסים</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content10Btn disabledBtn" id="arr12" disabled>משפט הקוסינוסים</button>
 
             <br><br>
-            <button class="btn btn-link content11Btn disabledBtn" disabled>טריגונומטריה במרחב</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content11Btn disabledBtn" id="arr13" disabled>טריגונומטריה במרחב</button>
 
             <br><br>
-            <button class="btn btn-link content12Btn disabledBtn" disabled>בעיות ערך קיצון בטריגונומטריה</button>
-            <i class="fas fa-2x fa-cart-arrow-down"></i>
+            <button class="btn btn-link content12Btn disabledBtn" id="arr14" disabled>בעיות ערך קיצון בטריגונומטריה</button>
 
             <br><br>
             <button class="btn btn-link content13Btn allChaptersBtn" disabled>כל הפרקים המלאים</button>
@@ -408,5 +399,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/lessons.js"></script>
     <script src="../js/shoppingCart.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 </html>

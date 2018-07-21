@@ -27,44 +27,85 @@
   }
 }
 
+@mixin searchResult{
+  position: absolute;
+  left: 33px;
+  top: 52px;
+  background-color: lighten($color-complement-3, 25%); //white;
+  color: white;
+  width: 205px;  
+  
+  .link{
+    position: relative;
+    right: 15px;
+    border-bottom: 1px solid $color-complement-3;
+    width: 117%;
+    padding: 3px 0;
+
+    a{
+      text-decoration: none;
+      color: inherit;
+      padding-right: 5px;
+    }
+
+    &:hover{
+      background-color: lighten($color-complement-3, 75%);
+      color: black;
+    }
+  }
+}
+
+@mixin searchLine{
+  background-image: url('../img/search.jpg');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  margin-left: 20px;
+}
+
 @mixin footer{
 
   background-color: #383838;
-  height: 180px;
+  height: 120px;
   overflow-x: hidden;
   overflow-y: hidden;
 
   #contactDetails{
-    position: relative;
-    top:30px;
-    #envelopeSymbol{
-      color: white;
-    }
-
-    #phoneSymbol{
-      color: white;
       position: relative;
-      bottom: 20px;
-    }
+      top:30px;
 
-    p{
-      font-size: 20px;
-      position: relative;
-      left: 100px;
-      bottom: 25px;
-    }
+      #envelopeSymbol{
+          color: white;
+          position: relative;
+          // top: 14px;
+          left: 200px;
+      }
+
+      #phoneSymbol{
+          color: white;
+          position: relative;
+          bottom: 68px;
+          left: 540px;
+      }
+
+      p{
+          font-size: 20px;
+          position: relative;
+          left: 50px;
+          bottom: 25px;
+      }
   }
 
   #copyRight{
-    color: white;
-    position: relative;
-    left: 570px;
-    top: 150px;
-    p{
+      color: white;
       position: relative;
-      left: 25px;
-      bottom: 17px;
-    }
+      left: 570px;
+      top: 90px;
+      p{
+          position: relative;
+          left: 25px;
+          bottom: 17px;
+      }
   }
 }
 

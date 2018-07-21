@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: hadasimclm;
-  src: url("/fonts/hadasimclm/hadasimclm-regularoblique-webfont.ttf");
+  src: url("../fonts/hadasimclm/hadasimclm-regular-webfont.ttf");
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -17,62 +17,47 @@
 
 nav{
   @include navbar;
+  border-bottom: 1px solid gray;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
 
 #searchResult{
-  @include searchResult;
+    @include searchResult;
 }
 
 #searchLine{
-  @include searchLine;
+    @include searchLine;
 }
-
+  
 /*------------------------------------------------------------------------------------------------------*/
 
-#coverImg{
-  height: 500px;
-  background-image: url("../img/math6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -100px;
-  overflow-x: hidden;
-}
+#contact{
+    background-color: lighten($color-secondary-1-1, 10%);
+    // background-color: lighten(#800, 2%);
 
-#headline{
-  position: relative;
-  left: 650px;
-  top: 280px;
-  color: white;
-  h1{
-    font-family: hadasimclm;
-    font-size: 70px;
-    border-bottom: 5px solid $color-primary-1;
-
-    #understand{
-      font-size: 110px;
+    h1{
+        color: lighten(black, 15%);
+        font-family: hadasimclm;
+        font-size: 60px;
+        padding-top:50px;
+        border-bottom: 3px solid lighten(black, 15%);
+        width: 200px;
+    }
+    
+    form{
+        margin-top: 15px;
+        margin-right: 60px;
+        padding-bottom: 100px;
+        
+        textarea{
+            height: 200px;
+        }
     }
 
-    #math{
-      color: $color-primary-4;
-      // color: 	#D3D3D3;
-      // color: black;
+    .frame{
+        box-shadow: 1px 0 2px 0;
     }
-  }
-}
-
-#chapters{
-
-  .card{
-    margin: 40px 40px;
-
-    img{
-      height: 170px;
-      padding-top: 10px;
-    }
-
-  }
 }
 
 
@@ -81,4 +66,3 @@ nav{
 footer{
   @include footer;
 }
-

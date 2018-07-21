@@ -15,6 +15,16 @@ nav{
 
 /*------------------------------------------------------------------------------------------------------*/
 
+#searchResult{
+  @include searchResult;
+}
+
+#searchLine{
+  @include searchLine;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
 .bg{
   background-color: $color-complement-1;
   border-top: 1px solid white;
