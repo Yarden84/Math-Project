@@ -84,6 +84,17 @@ nav .items .itemsNum {
   left: 20px;
 }
 
+.content #paymentBtn {
+  position: relative;
+  bottom: 20px;
+  right: 30px;
+}
+
+.content #paymentBtn a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /*------------------------------------------------------------------------------------------------------*/
 footer {
   background-color: #383838;
@@ -115,6 +126,11 @@ footer #contactDetails p {
   position: relative;
   left: 50px;
   bottom: 25px;
+}
+
+footer #contactDetails p a {
+  color: inherit;
+  text-decoration: none;
 }
 
 footer #copyRight {

@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------------------------------------*/
 @font-face {
-  font-family: hadasimclm;
-  src: url("/fonts/hadasimclm/hadasimclm-regularoblique-webfont.ttf");
+  font-family: shuneet;
+  src: url("../fonts/shuneet/shuneet_bold_v2.otf");
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -83,25 +83,36 @@ nav .items .itemsNum {
   overflow-x: hidden;
 }
 
-#headline {
+#coverImg #headline {
   position: relative;
   left: 650px;
-  top: 280px;
+  top: 100px;
   color: white;
 }
 
-#headline h1 {
+#coverImg #headline h1 {
   font-family: hadasimclm;
   font-size: 70px;
   border-bottom: 5px solid #FFDBAE;
 }
 
-#headline h1 #understand {
+#coverImg #headline h1 #understand {
   font-size: 110px;
 }
 
-#headline h1 #math {
+#coverImg #headline h1 #math {
   color: #4B2E0B;
+}
+
+#coverImg #contact {
+  position: relative;
+  right: 750px;
+  top: 220px;
+  width: 600px;
+  color: #4B2E0B;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  border-top: 5px solid #FFDBAE;
+  padding-top: 10px;
 }
 
 #chapters .card {
@@ -144,6 +155,11 @@ footer #contactDetails p {
   position: relative;
   left: 50px;
   bottom: 25px;
+}
+
+footer #contactDetails p a {
+  color: inherit;
+  text-decoration: none;
 }
 
 footer #copyRight {

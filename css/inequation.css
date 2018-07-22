@@ -241,6 +241,11 @@ footer #contactDetails p {
   bottom: 25px;
 }
 
+footer #contactDetails p a {
+  color: inherit;
+  text-decoration: none;
+}
+
 footer #copyRight {
   color: white;
   position: relative;

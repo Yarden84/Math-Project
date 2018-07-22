@@ -2,9 +2,10 @@
 @import "variables";
 /*------------------------------------------------------------------------------------------------------*/
 
+
 @font-face {
-  font-family: hadasimclm;
-  src: url("/fonts/hadasimclm/hadasimclm-regularoblique-webfont.ttf");
+  font-family: shuneet;
+  src: url("../fonts/shuneet/shuneet_bold_v2.otf");
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -38,29 +39,42 @@ nav{
   background-size: cover;
   background-position-y: -100px;
   overflow-x: hidden;
-}
 
-#headline{
-  position: relative;
-  left: 650px;
-  top: 280px;
-  color: white;
-  h1{
-    font-family: hadasimclm;
-    font-size: 70px;
-    border-bottom: 5px solid $color-primary-1;
-
-    #understand{
-      font-size: 110px;
-    }
-
-    #math{
-      color: $color-primary-4;
-      // color: 	#D3D3D3;
-      // color: black;
+  #headline{
+    position: relative;
+    left: 650px;
+    top: 100px;
+    color: white;
+    h1{
+      font-family: hadasimclm;
+      font-size: 70px;
+      border-bottom: 5px solid $color-primary-1;
+  
+      #understand{
+        font-size: 110px;
+      }
+  
+      #math{
+        color: $color-primary-4;
+      }
     }
   }
+
+  #contact{
+    position: relative;
+    // left: 100px;
+    right: 750px;
+    top: 220px;
+    width: 600px;
+    color: $color-primary-4;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    // font-family: shuneet;
+    border-top: 5px solid $color-primary-1;
+    padding-top: 10px;
+  }
 }
+
+
 
 #chapters{
 
