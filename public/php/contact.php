@@ -1,5 +1,7 @@
 <?php
+echo "<script>console.error( "Yarden is kalb" );</script>";
     $name = $_POST['name'];
+echo "<script>console.error( "Yarden name .$name." );</script>";
     $visitorEmail = $_POST['email'];
     $message = $_POST['message'];
 
@@ -13,5 +15,5 @@
     $headers = "From: $emailFrom \r\n";
     $headers .= "Replay-To: $visitorEmail \r\n";
     mail($to,$emailSubject,$emailBody,$headers);
-    header("Location: ../view/contact.html");
+    header("Location: contact.html");
 ?>
