@@ -67,8 +67,8 @@
             <h1>צרו קשר</h1>
             
             <br>
-            
-            <form method="post" action="contact.php">
+            <?php include('../php/contact.php'); ?>
+            <form action="<?= $_SERVER['PHP_SELF']; ?>p" method="post">
 
                 <div class="form-group">
                     <label>שם מלא</label>   
