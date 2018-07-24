@@ -62,13 +62,11 @@ nav{
 
   #contact{
     position: relative;
-    // left: 100px;
     right: 750px;
     top: 220px;
     width: 600px;
     color: $color-primary-4;
     font-family: Comic Sans MS, Comic Sans, cursive;
-    // font-family: shuneet;
     border-top: 5px solid $color-primary-1;
     padding-top: 10px;
   }
@@ -89,10 +87,6 @@ nav{
   }
 }
 
-
-/*------------------------------------------------------------------------------------------------------*/
-
-footer{
-  @include footer;
+object{
+  height: 120px;
 }
-

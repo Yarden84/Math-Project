@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: shuneet;
+  src: url("../fonts/shuneet/shuneet_bold_v2.otf");
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #383838;
+  height: 120px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+* #contactDetails {
+  position: relative;
+  top: 30px;
+}
+
+* #contactDetails #envelopeSymbol {
+  color: white;
+  position: relative;
+  left: 200px;
+}
+
+* #contactDetails #phoneSymbol {
+  color: white;
+  position: relative;
+  bottom: 120px;
+  left: 540px;
+}
+
+* #contactDetails p {
+  font-size: 20px;
+  position: relative;
+  left: 50px;
+  bottom: 25px;
+}
+
+* #contactDetails p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* #copyRight {
+  color: white;
+  position: absolute;
+  left: 570px;
+  top: 90px;
+}
+
+* #copyRight p {
+  position: relative;
+  left: 25px;
+  bottom: 17px;
+  padding-right: 40px;
+}
+/*# sourceMappingURL=footer.css.map */

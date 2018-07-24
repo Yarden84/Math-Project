@@ -7,7 +7,7 @@
 /*------------------------------------------------------------------------------------------------------*/
 nav {
   position: fixed;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 nav li {
@@ -202,53 +202,7 @@ nav .items .itemsNum {
 }
 
 /*------------------------------------------------------------------------------------------------------*/
-footer {
-  background-color: #383838;
+object {
   height: 120px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-footer #contactDetails {
-  position: relative;
-  top: 30px;
-}
-
-footer #contactDetails #envelopeSymbol {
-  color: white;
-  position: relative;
-  left: 200px;
-}
-
-footer #contactDetails #phoneSymbol {
-  color: white;
-  position: relative;
-  bottom: 68px;
-  left: 540px;
-}
-
-footer #contactDetails p {
-  font-size: 20px;
-  position: relative;
-  left: 50px;
-  bottom: 25px;
-}
-
-footer #contactDetails p a {
-  color: inherit;
-  text-decoration: none;
-}
-
-footer #copyRight {
-  color: white;
-  position: relative;
-  left: 570px;
-  top: 90px;
-}
-
-footer #copyRight p {
-  position: relative;
-  left: 25px;
-  bottom: 17px;
 }
 /*# sourceMappingURL=wordProblems.css.map */

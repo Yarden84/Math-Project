@@ -77,14 +77,13 @@
       #envelopeSymbol{
           color: white;
           position: relative;
-          // top: 14px;
           left: 200px;
       }
 
       #phoneSymbol{
           color: white;
           position: relative;
-          bottom: 68px;
+          bottom: 120px;
           left: 540px;
       }
 
@@ -103,15 +102,17 @@
 
   #copyRight{
       color: white;
-      position: relative;
+
+      position: absolute;
       left: 570px;
       top: 90px;
       p{
           position: relative;
           left: 25px;
           bottom: 17px;
+          padding-right: 40px;
       }
-  }
+   }
 }
 
 
