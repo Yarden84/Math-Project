@@ -1,5 +1,7 @@
 <?php
+echo "<script>console.error( "Yarden is kalb" );</script>";
     $name = $_POST['name'];
+echo "<script>console.error( "Yarden name .$name. );</script>";
     $visitorEmail = $_POST['email'];
     $message = $_POST['message'];
 
