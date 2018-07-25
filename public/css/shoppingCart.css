@@ -69,7 +69,7 @@ nav .items .itemsNum {
 
 /*------------------------------------------------------------------------------------------------------*/
 .content {
-  min-height: 400px;
+  min-height: 450px;
   padding-top: 50px;
 }
 
@@ -98,5 +98,6 @@ nav .items .itemsNum {
 /*------------------------------------------------------------------------------------------------------*/
 object {
   height: 120px;
+  margin-bottom: -6px;
 }
 /*# sourceMappingURL=shoppingCart.css.map */

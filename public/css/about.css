@@ -179,5 +179,6 @@ nav .items .itemsNum {
 /*------------------------------------------------------------------------------------------------------*/
 object {
   height: 120px;
+  margin-bottom: -6px;
 }
 /*# sourceMappingURL=about.css.map */
