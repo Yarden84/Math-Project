@@ -1,0 +1,116 @@
+<?php
+            if (!empty($_POST['submit'])) { echo 'form submitted'; }
+?>
+
+<?php echo
+"<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Contact</title>
+    <link rel='stylesheet' type='text/css' href='../css/contact.css'>
+    <link rel='stylesheet' href='../css/bootstrap.min.css'>
+    <link rel='stylesheet' href='../css/fontawesome/css/all.css'>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+
+    <div class='container-fluid'>
+        <nav class='navbar navbar-expand-lg navbar-light row'>
+            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+
+                <form class='form-inline my-2 my-lg-0'>
+                    <input class='form-control mr-sm-2' id='searchLine' type='search' placeholder='חיפוש' aria-label='Search' dir='rtl'>
+                    <ul class='navbar-nav mr-auto'>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='shoppingCart.html'><i class='fas fa-2x fa-cart-arrow-down'></i></a>
+                        </li>
+                        <li class='nav-item'>
+                            <div class='items'><strong><span class='itemsNum'></span></strong></div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <ul class='navbar-nav mr-auto'>
+                <li class='nav-item active'>
+                    <a class='nav-link' href='contact.html'>צרו קשר<span class='sr-only'>(current)</span></a>
+                </li>
+                <li class='nav-item dropdown'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' dir='rtl'>
+                        נושאים
+                    </a>
+                    <div class='dropdown-menu dropdown-menu-right' aria-labelledby='navbarDropdown'>
+                        <a class='dropdown-item text-right' href='inequation.html'>אי שוויון עם ערך מוחלט</a>
+                        <a class='dropdown-item text-right' href='wordProblems.html'>בעיות מילוליות</a>
+                        <a class='dropdown-item text-right' href='induction.html'>אינדוקציה מתמטית</a>
+                        <a class='dropdown-item text-right' href='calculus.html'>חשבון דיפרנציאלי ואינטגרלי</a>
+                        <a class='dropdown-item text-right' href='trig.html'>טריגונומטריה</a>
+                    </div>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='about.html'>אודות</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='../index.html'>דף הבית </a>
+                </li>
+            </ul>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+        </nav>
+    </div>
+
+    <div class='container text-right' id='searchResult'></div>
+
+    
+    <div class='' id='contact'> 
+        <div class='container text-right' dir='rtl'>
+            
+            <h1>צרו קשר</h1>
+            
+            <br>
+            
+            
+
+            <form action='' method='post'>
+
+                <div class='form-group'>
+                    <label>שם מלא</label>   
+                    <input type='text' name='name' class='form-control frame' required>
+                </div>
+
+                <div class='form-group'>
+                    <label>אימייל</label>
+                    <input type='email' name='email' class='form-control frame' required>
+                </div>
+
+                <br>
+
+                <div class='form-group'>
+                    <label>תוכן ההודעה</label>    
+                    <textarea name='message' id='message' cols='' rows='' class='form-control frame'></textarea>
+                </div>
+
+                <br>
+
+                <button class='btn btn-outline-secondary' type='submit' name='submit' value='submit'>שלח</button>
+                
+            </form>
+            
+        </div>
+    </div>
+    
+
+    <object data='footer.html' width='100%'></object>
+
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src='../js/bootstrap.min.js'></script>
+    <script src='../js/shoppingCart.js'></script>
+    <script src='../js/search.js'></script>
+</body>
+</html>"
