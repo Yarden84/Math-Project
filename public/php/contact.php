@@ -1,5 +1,4 @@
 <?php
-    if ($_POST['submit']){
         $name = $_POST['name'];
         $visitorEmail = $_POST['email'];
         $message = $_POST['message'];
@@ -15,5 +14,4 @@
         $headers .= "Replay-To: $visitorEmail \r\n";
         mail($to,$emailSubject,$emailBody,$headers);
         header("Location: contact.html");
-    }
 ?>
