@@ -75,7 +75,7 @@ nav .items .itemsNum {
 
 /*------------------------------------------------------------------------------------------------------*/
 #coverImg {
-  height: 500px;
+  min-height: 500px;
   background-image: url("../img/math6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
