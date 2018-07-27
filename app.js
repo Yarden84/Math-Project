@@ -17,9 +17,9 @@ app.use(bodyParser.json());
 // Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    res.render('contact');
-});
+// app.get('/', (req, res) => {
+//     res.render('contact');
+// });
 
 app.post('/send', (req, res) => {
     const output =
