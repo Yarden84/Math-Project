@@ -17,19 +17,22 @@ app.listen(port, function(){
 
 /*---------------------------------------------------------------------------------*/
 
-// const bodyParser = require('body-parser');
-// const exphbs = require('express-handlebars');
-// const path = require('path');
-// const nodemailer = require('nodemailer');
 
 
-// // View engine setup
-// app.engine('handlebars', exphbs());
-// app.set('view engine', 'handlebars');
 
-// // Body parser middleware
-// app.use(bodyParser.urlencoded({extended: false}));
-// app.use(bodyParser.json());
+const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const path = require('path');
+const nodemailer = require('nodemailer');
+
+
+// View engine setup
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
+
+// Body parser middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 
 
