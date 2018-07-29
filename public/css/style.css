@@ -105,9 +105,8 @@ nav .items .itemsNum {
 }
 
 #coverImg #contact {
-  position: relative;
-  right: 750px;
-  top: 220px;
+  position: absolute;
+  top: 440px;
   width: 600px;
   color: #4B2E0B;
   font-family: Comic Sans MS, Comic Sans, cursive;
@@ -116,7 +115,7 @@ nav .items .itemsNum {
 }
 
 #chapters .card {
-  margin: 40px 40px;
+  margin: 40px auto;
 }
 
 #chapters .card img {

@@ -70,41 +70,89 @@
   overflow-y: hidden;
   
 
-  #contactDetails{
-      position: relative;
-      top:30px;
+  // #contactDetails{
+  //     position: relative;
+  //     top:30px;
+  
 
-      #envelopeSymbol{
-          color: white;
-          position: relative;
-          left: 200px;
-      }
+  //     #envelopeSymbol{
+  //         color: white;
+  //         // position: relative;
+  //         // left: 200px;
+  //         position: absolute;
+  //         left: 30%;
+  //     }
 
-      #phoneSymbol{
-          color: white;
-          position: relative;
-          bottom: 120px;
-          left: 540px;
-      }
+  //     #phoneSymbol{
+  //         color: white;
+  //         position: relative;
+  //         // bottom: 120px;
+  //         left: 540px;
+  //         // left: auto;
+  //     }
 
+  //     p{
+  //         font-size: 20px;
+  //         position: relative;
+  //         left: 50px;
+  //         bottom: 25px;
+
+  //         a{
+  //           color: inherit;
+  //           text-decoration: none;
+  //         }
+  //     }
+  // }
+
+  /*-----------------------------------------------------------------------------------------------------*/
+  #envelopeSymbol{
+      color: white;
+
+      position: absolute;
+      left: 30%;
+      top: 30px;
       p{
-          font-size: 20px;
-          position: relative;
-          left: 50px;
-          bottom: 25px;
-
-          a{
-            color: inherit;
-            text-decoration: none;
-          }
-      }
+        font-size: 20px;
+        position: relative;
+        left: 50px;
+        bottom: 25px;
+        width: 250px;
+        a{
+          color: inherit;
+          text-decoration: none;
+        }
+      } 
   }
+  
+  #phoneSymbol{
+      color: white;
+      
+      position: absolute;
+      right: 30%;
+      top: 30px;
+      p{
+        font-size: 20px;
+        position: relative;
+        left: 50px;
+        bottom: 25px;
+        width: 150px;
+        a{
+          color: inherit;
+          text-decoration: none;
+        }
+    } 
+  }
+  
+        
+  /*-----------------------------------------------------------------------------------------------------*/
+  
 
   #copyRight{
       color: white;
 
       position: absolute;
-      left: 570px;
+      // left: 40%;
+      right: 40%;
       top: 90px;
       p{
           position: relative;
