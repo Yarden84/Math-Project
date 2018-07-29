@@ -67,8 +67,8 @@ app.post('/send', (req, res) => {
 
 // app.listen(3000, () => console.log('Server started...'));
 
-// var port = process.env.PORT || 8080
+var port = process.env.PORT || 8080
 
-// app.listen(port, function(){
-//     console.log("app running");
-// })
+app.listen(port, function(){
+    console.log("app running");
+})
