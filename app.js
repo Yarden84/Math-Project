@@ -16,11 +16,11 @@ app.use(bodyParser.json());
 
 // Static folder
 // app.use('/public', express.static(path.join(__dirname, 'public')));
-app.use('/views', express.static(path.join(__dirname, 'views')));
+// app.use('/views', express.static(path.join(__dirname, 'views')));
 
-app.get('/', (req, res) => {
-    res.render('contact');
-});
+// app.get('/', (req, res) => {
+//     res.render('contact');
+// });
 
 app.post('/send', (req, res) => {
     const output =
