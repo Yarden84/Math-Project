@@ -51,7 +51,7 @@ $('#searchLine').keyup(function(){
             textFound = allChapters[j][i].includes(indexStr); 
             if (textFound){
                 var title = document.title;
-                if (title == "Home Page"){
+                if (title == "להבין מתמטיקה - עמוד ראשי"){
                     $('#searchResult').append('<div class="link"><a href="view/'+chapterLink[j]+'#arr'+i+'" class="searchLink" id="'+j+'-'+i+'">'+allChapters[j][i]+'</a></div>');
                 }
                 else{
