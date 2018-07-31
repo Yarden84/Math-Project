@@ -59,49 +59,45 @@
         </nav>
     </div>
 
-    <div class="container text-right" id="searchResult"></div>
+    
 
     
-    <div class="" id="contact"> 
+    <div id="contact"> 
         <div class="container text-right" dir="rtl">
             
             <h1>צרו קשר</h1>
             
-            <br>
+            <br><br><br>
             
-            
-            <form action="" method="POST">
+            <div id="contactText">
+                <p>מטרת האתר היא להפוך את לימודי המתמטיקה לנגישים וברורים יותר.</p>
+                <p> על מנת להשיג זאת יועיל לנו מאוד לדעת כיצד אתם חוויתם את השימוש בחומר המוצג באתר. </p>
+                <p>נשמח לכל שאלה, הצעה, הערה וכד'.</p>
+            </div>
 
-                <div class="form-group">
-                    <label>שם מלא</label>   
-                    <input type="text" name="name" class="form-control frame">
+            <br><br>
+
+            <div class="row text-center">
+                <div class="col-md-6" id="envelopeSymbol">
+                    <i class="far fa-3x fa-envelope"><p><a href="mailto:haizlermath@gmail.com"><strong>haizlermath@gmail.com</strong></a></p></i>
                 </div>
-
-                <div class="form-group">
-                    <label>אימייל</label>
-                    <input type="email" name="email" class="form-control frame">
-                </div>
-
-                <br>
-
-                <div class="form-group">
-                    <label>תוכן ההודעה</label>    
-                    <textarea name="message" id="message" cols="" rows="" class="form-control frame"></textarea>
-                </div>
-
-                <br>
-
-                <input class="btn btn-outline-secondary" type="submit" name="submit" value="שלח"></input>
                 
-            </form>
+                <!-- <br> -->
+
+                <div class="col-md-6" id="phoneSymbol">
+                    <i class="fas fa-3x fa-phone-square"><p>050-6666031</p></i>
+                </div>
+
+            </div>
+            <br>
             
         </div>
     </div>
     
 
-    <object data="footer.html" width="100%"></object>
+    <object data="footer.html" height="50px" width="100%"></object>
 
-
+    <div class="container text-right" id="searchResult"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>

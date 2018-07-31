@@ -62,105 +62,43 @@
   margin-left: 20px;
 }
 
+
 @mixin footer{
 
   background-color: #383838;
-  height: 120px;
   overflow-x: hidden;
   overflow-y: hidden;
+
+  #content{
+    color: white;
   
-
-  // #contactDetails{
-  //     position: relative;
-  //     top:30px;
+    #links{
+      margin: 10px auto; 
   
-
-  //     #envelopeSymbol{
-  //         color: white;
-  //         // position: relative;
-  //         // left: 200px;
-  //         position: absolute;
-  //         left: 30%;
-  //     }
-
-  //     #phoneSymbol{
-  //         color: white;
-  //         position: relative;
-  //         // bottom: 120px;
-  //         left: 540px;
-  //         // left: auto;
-  //     }
-
-  //     p{
-  //         font-size: 20px;
-  //         position: relative;
-  //         left: 50px;
-  //         bottom: 25px;
-
-  //         a{
-  //           color: inherit;
-  //           text-decoration: none;
-  //         }
-  //     }
-  // }
-
-  /*-----------------------------------------------------------------------------------------------------*/
-  #envelopeSymbol{
-      color: white;
-
-      position: absolute;
-      left: 30%;
-      top: 30px;
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      #middle{
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        height: 30px;
+      }
+    }
+  
+    #copyRight2{ 
       p{
-        font-size: 20px;
-        position: relative;
-        left: 50px;
-        bottom: 25px;
-        width: 250px;
-        a{
-          color: inherit;
-          text-decoration: none;
-        }
-      } 
-  }
-  
-  #phoneSymbol{
-      color: white;
+        font-size: 12px;
+        margin-left: 5px;
+      }
       
       position: absolute;
-      right: 30%;
-      top: 30px;
-      p{
-        font-size: 20px;
-        position: relative;
-        left: 50px;
-        bottom: 25px;
-        width: 150px;
-        a{
-          color: inherit;
-          text-decoration: none;
-        }
-    } 
+      left: 20px;
+      top: 25px;
+    }
   }
   
-        
-  /*-----------------------------------------------------------------------------------------------------*/
-  
-
-  #copyRight{
-      color: white;
-
-      position: absolute;
-      // left: 40%;
-      right: 40%;
-      top: 90px;
-      p{
-          position: relative;
-          left: 25px;
-          bottom: 17px;
-          padding-right: 40px;
-      }
-   }
 }
 
 

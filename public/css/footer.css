@@ -9,64 +9,42 @@
   padding: 0;
   margin: 0;
   background-color: #383838;
-  height: 120px;
   overflow-x: hidden;
   overflow-y: hidden;
-  /*-----------------------------------------------------------------------------------------------------*/
-  /*-----------------------------------------------------------------------------------------------------*/
 }
 
-* #envelopeSymbol {
+* #content {
   color: white;
-  position: absolute;
-  left: 30%;
-  top: 30px;
 }
 
-* #envelopeSymbol p {
-  font-size: 20px;
-  position: relative;
-  left: 50px;
-  bottom: 25px;
-  width: 250px;
+* #content #links {
+  margin: 10px auto;
 }
 
-* #envelopeSymbol p a {
+* #content #links a {
   color: inherit;
   text-decoration: none;
 }
 
-* #phoneSymbol {
-  color: white;
+* #content #links #middle {
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  height: 30px;
+}
+
+* #content #copyRight2 {
   position: absolute;
-  right: 30%;
-  top: 30px;
+  left: 20px;
+  top: 25px;
 }
 
-* #phoneSymbol p {
-  font-size: 20px;
-  position: relative;
-  left: 50px;
-  bottom: 25px;
-  width: 150px;
+* #content #copyRight2 p {
+  font-size: 12px;
+  margin-left: 5px;
 }
 
-* #phoneSymbol p a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* #copyRight {
-  color: white;
-  position: absolute;
-  right: 40%;
-  top: 90px;
-}
-
-* #copyRight p {
-  position: relative;
-  left: 25px;
-  bottom: 17px;
-  padding-right: 40px;
+html, body {
+  height: 50px;
+  min-height: 50px;
 }
 /*# sourceMappingURL=footer.css.map */

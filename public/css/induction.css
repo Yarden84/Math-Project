@@ -203,7 +203,6 @@ nav .items .itemsNum {
 
 /*------------------------------------------------------------------------------------------------------*/
 object {
-  height: 120px;
-  margin-bottom: -6px;
+  position: absolute;
 }
 /*# sourceMappingURL=induction.css.map */

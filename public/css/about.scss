@@ -31,31 +31,31 @@ nav{
     border-bottom: 1px solid white;
   }
   
-  .content{
-  
-    @include content;
+.content{
 
-    padding-right: 50px !important;
+  @include content;
 
-    .details{
-        padding-right: 20px; 
-        width: 800px;
-    }
+  padding-right: 50px !important;
 
-    table{
-        margin-right: 165px;
-        tr:nth-child(7){
-            td:nth-child(2){
-                border-top: 1px solid black;
-            }
-        } 
-    }
-
+  .details{
+      padding-right: 20px; 
+      width: 800px;
   }
+
+  table{
+      margin-right: 165px;
+      tr:nth-child(7){
+          td:nth-child(2){
+              border-top: 1px solid black;
+          }
+      } 
+  }
+
+}
+
 
 /*------------------------------------------------------------------------------------------------------*/
 
 object{
-  height: 120px;
-  margin-bottom: -6px;
+  position: absolute;
 }

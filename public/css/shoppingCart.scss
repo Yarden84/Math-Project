@@ -25,14 +25,13 @@ nav{
 /*------------------------------------------------------------------------------------------------------*/
 
 .content{
-    min-height: 450px;
+    min-height: 519px;
     padding-top: 50px;
     
     .item{
         text-align: right;
         position: relative;
         right: 270px;
-        // margin-right:50px;
     }
 
     .removeBtn{
@@ -55,7 +54,6 @@ nav{
 /*------------------------------------------------------------------------------------------------------*/
 
 object{
-  height: 120px;
-  margin-bottom: -6px;
+  position: absolute;
 }
 

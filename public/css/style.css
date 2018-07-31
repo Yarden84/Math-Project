@@ -104,7 +104,7 @@ nav .items .itemsNum {
   color: #4B2E0B;
 }
 
-#coverImg #contact {
+#coverImg #content {
   position: absolute;
   top: 440px;
   width: 600px;
@@ -123,8 +123,8 @@ nav .items .itemsNum {
   padding-top: 10px;
 }
 
+/*------------------------------------------------------------------------------------------------------*/
 object {
-  height: 120px;
-  margin-bottom: -6px;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

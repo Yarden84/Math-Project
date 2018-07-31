@@ -69,7 +69,7 @@ nav .items .itemsNum {
 
 /*------------------------------------------------------------------------------------------------------*/
 .content {
-  min-height: 500px;
+  min-height: 511px;
   padding-top: 50px;
   background-image: url("../img/underConstruction3.jpg");
   background-repeat: no-repeat;
@@ -81,12 +81,10 @@ nav .items .itemsNum {
 .content h4 {
   position: relative;
   top: 400px;
-  left: 250px;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
 object {
-  height: 120px;
-  margin-bottom: -6px;
+  position: absolute;
 }
 /*# sourceMappingURL=payment.css.map */
