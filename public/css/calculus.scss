@@ -27,8 +27,8 @@ nav{
 
 .bg{
   background-color: $color-complement-1;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid $color-complement-1;
+  border-bottom: 1px solid $color-complement-1;
 }
 
 .content{

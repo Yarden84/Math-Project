@@ -45,6 +45,7 @@ nav{
     left: 650px;
     top: 100px;
     color: white;
+
     h1{
       font-family: hadasimclm;
       font-size: 70px;
@@ -68,6 +69,13 @@ nav{
     font-family: Comic Sans MS, Comic Sans, cursive;
     border-top: 5px solid $color-primary-1;
     padding-top: 10px;
+
+    @media only screen and (min-width: 1500px){
+      color: white;
+      background-color: transparentize($color-primary-1, 0.5);
+      top: 444px;
+      border-top: 5px solid $color-primary-0;
+    }
   }
 }
 

@@ -70,8 +70,8 @@ nav .items .itemsNum {
 /*------------------------------------------------------------------------------------------------------*/
 .bg {
   background-color: #8FB5CB;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #8FB5CB;
+  border-bottom: 1px solid #8FB5CB;
 }
 
 .content {
@@ -84,6 +84,8 @@ nav .items .itemsNum {
   padding: 50px 30px;
   min-height: 500px;
   /*img animations:*/
+  min-height: 100vh;
+  position: relative;
 }
 
 .content .shoppingCart {
@@ -195,10 +197,19 @@ nav .items .itemsNum {
 
 .content .content3Btn {
   padding-right: 40px;
+  padding-bottom: 70px;
 }
 
 .content .content4Btn {
-  margin-right: 400px;
+  margin-right: 380px;
+  position: absolute;
+  bottom: 70px;
+}
+
+.content .shoppingBtn {
+  margin-right: 550px;
+  position: absolute;
+  bottom: 70px;
 }
 
 /*------------------------------------------------------------------------------------------------------*/

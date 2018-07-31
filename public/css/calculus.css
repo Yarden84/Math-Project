@@ -70,8 +70,8 @@ nav .items .itemsNum {
 /*------------------------------------------------------------------------------------------------------*/
 .bg {
   background-color: #8FB5CB;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #8FB5CB;
+  border-bottom: 1px solid #8FB5CB;
 }
 
 .content {

@@ -27,13 +27,15 @@ nav{
 
 .bg{
   background-color: $color-complement-1;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid $color-complement-1;
+  border-bottom: 1px solid $color-complement-1;
 }
 
 .content{
 
   @include content;
+
+  min-height: 100vh;
 
   .content1, .content2{
     @include section;
@@ -61,9 +63,23 @@ nav{
   }
   .content3Btn{
     padding-right: 40px;
+    padding-bottom: 70px;
   }
+
+  position: relative;
+
   .content4Btn{
-    margin-right: 400px;
+    margin-right: 380px;
+  
+    position: absolute;
+    bottom: 70px;
+  }
+
+  .shoppingBtn{
+    margin-right: 550px;
+
+    position: absolute;
+    bottom: 70px;
   }
 }
 
